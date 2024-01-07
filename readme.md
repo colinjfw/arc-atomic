@@ -14,9 +14,11 @@ It's common to wrap [`AtomicArc`] in an [`Arc`] itself to allow sharing across
 threads.
 
 ```
+# use std::sync::Arc;
 # use std::thread;
 # use atomic_arc::AtomicArc;
 let arc = Arc::new(AtomicArc::new(Arc::new(1)));
+let handle = arc.clone();
 thread::spawn(move || {
     let val = *handle.load();
     println!("{val}"); // may print '1' or '2'
