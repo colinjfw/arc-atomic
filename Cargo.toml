@@ -1,12 +1,12 @@
 [package]
-name = "atomic-arc"
+name = "arc-atomic"
 version = "0.1.0"
 edition = "2021"
 
 description = "Provides an atomic pointer to an `Arc`"
 readme = "readme.md"
-documentation = "https://docs.rs/atomic-arc"
-repository = "https://github.com/colinjfw/atomic-arc"
+documentation = "https://docs.rs/arc-atomic"
+repository = "https://github.com/colinjfw/arc-atomic"
 license = "MIT"
 authors = ["Colin Walker <me@colinjfw.com>"]
 keywords = ["arc"]

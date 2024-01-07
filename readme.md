@@ -16,7 +16,7 @@ threads.
 ```
 # use std::sync::Arc;
 # use std::thread;
-# use atomic_arc::AtomicArc;
+# use arc_atomic::AtomicArc;
 let arc = Arc::new(AtomicArc::new(Arc::new(1)));
 let handle = arc.clone();
 thread::spawn(move || {
