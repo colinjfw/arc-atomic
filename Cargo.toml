@@ -1,0 +1,16 @@
+[package]
+name = "atomic-arc"
+version = "0.1.0"
+edition = "2021"
+
+description = "Provides an atomic pointer to an `Arc`"
+readme = "readme.md"
+documentation = "https://docs.rs/atomic-arc"
+repository = "https://github.com/colinjfw/atomic-arc"
+license = "MIT"
+authors = ["Colin Walker <me@colinjfw.com>"]
+keywords = ["arc"]
+categories = ["data-structures"]
+
+[target.'cfg(loom)'.dependencies]
+loom = { version = "0.7", features = ["checkpoint"] }
